@@ -5,7 +5,6 @@ let scoreList = [];
 const addScoreBtn = document.querySelector('#add_btn');
 const refreshBtn = document.querySelector('#refresh-btn');
 
-
 function renderScore(obj) {
   const scoreElement = document.createElement('div');
   scoreElement.classList.add('score-item');
@@ -42,6 +41,6 @@ function refreshScores() {
 refreshBtn.addEventListener('click', refreshScores);
 
 window.onload = () => {
-   scoreList = JSON.parse(localStorage.getItem('List')) || [];
+  scoreList = JSON.parse(localStorage.getItem('List')) || [];
   refreshScores();
 };
