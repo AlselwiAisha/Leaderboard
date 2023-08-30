@@ -13,7 +13,7 @@ const fetchScores = async () => {
 };
 
 // *----------------renderScore Function----------------//
-function renderScore(obj) {
+const renderScore = (obj) => {
   const scoreEl = document.createElement('li');
   scoreEl.classList.add('score-item');
   scoreEl.setAttribute('value', obj.id);
@@ -21,7 +21,7 @@ function renderScore(obj) {
                 <h3>${obj.user} : ${obj.score} </h3>
            `;
   document.querySelector('.list').appendChild(scoreEl);
-}
+};
 
 // *-----------------Scores Refresh Function----------------//
 const refreshScores = async () => {
