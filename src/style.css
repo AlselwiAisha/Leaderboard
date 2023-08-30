@@ -55,6 +55,7 @@ form {
 
 .score-item {
   padding: 5px;
+  list-style: none;
 }
 
 .score-item:nth-child(odd) {

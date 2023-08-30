@@ -6,7 +6,7 @@ const addScoreBtn = document.querySelector('#add_btn');
 const refreshBtn = document.querySelector('#refresh-btn');
 
 function renderScore(obj) {
-  const scoreElement = document.createElement('div');
+  const scoreElement = document.createElement('li');
   scoreElement.classList.add('score-item');
   scoreElement.setAttribute('value', obj.id);
   scoreElement.innerHTML = `
