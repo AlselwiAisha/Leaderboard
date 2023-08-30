@@ -5,6 +5,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
+    funcs: './src/modules/funcs.js',
   },
 
   plugins: [
