@@ -18,7 +18,7 @@ function renderScore(obj) {
 function addScore() {
   const name = document.querySelector('#name');
   const score = document.querySelector('#score');
-  if (name.value === '' || score.value === '') {
+  if (name.value === '' || score.value === ''||score.value<0) {
     throw new Error('Please fill in all fields');
   } else {
     const scoreObj = new Score(scoreList.length, score.value, name.value);
