@@ -47,10 +47,12 @@ main {
 .list {
   width: 99%;
   margin-top: 2%;
+  max-height: 50vh;
   border: #394965 solid 1px;
   display: flex;
   flex-direction: column;
   text-align: start;
+  overflow-y: auto;
 }
 
 form {
